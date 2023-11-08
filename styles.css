@@ -125,10 +125,15 @@ body{
     background: var(--bg-color);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    transition: background 0.2s;
+    transition: background 0.3s;
 }
 
-.nav-item:hover, .nav-item:active{
+.nav-item:active{
+    border: 1.5px solid var(--stroke-color-hover);
+    background: var(--bg-color-hover);
+}
+
+.nav-item:hover{
     border: 1.5px solid var(--stroke-color-hover);
     background: var(--bg-color-hover);
 }
@@ -154,7 +159,11 @@ body{
     transition: background 0.2s;
 }
 
-.sociais-item:hover, .sociais-item:active{
+.sociais-item:hover{
+    background-color: var(--bg-social-color);
+}
+
+.sociais-item:active{
     background-color: var(--bg-social-color);
 }
 
