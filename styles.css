@@ -128,7 +128,7 @@ body{
     transition: background 0.2s;
 }
 
-.nav-item:hover{
+.nav-item:hover, .nav-item:active{
     border: 1.5px solid var(--stroke-color-hover);
     background: var(--bg-color-hover);
 }
@@ -154,7 +154,7 @@ body{
     transition: background 0.2s;
 }
 
-.sociais-item:hover{
+.sociais-item:hover, .sociais-item:active{
     background-color: var(--bg-social-color);
 }
 
