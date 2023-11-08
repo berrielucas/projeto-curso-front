@@ -64,7 +64,11 @@ body{
     width: 64px;
     position: relative;
 }
+
 #switch:hover{
+    cursor: pointer;
+}
+#switch button:hover{
     cursor: pointer;
 }
 
