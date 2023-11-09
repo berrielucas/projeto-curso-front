@@ -63,13 +63,7 @@ body{
 #switch{
     width: 64px;
     position: relative;
-}
-
-#switch:hover{
-    cursor: pointer;
-}
-#switch button:hover{
-    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #switch button{
@@ -122,20 +116,16 @@ body{
     color: var(--text-color);
     border-radius: 8px;
     border: 1px solid var(--stroke-color);
-    background: var(--bg-color);
+    background-color: var(--bg-color);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     transition: background 0.3s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-item:active{
     border: 1.5px solid var(--stroke-color-hover);
-    background: var(--bg-color-hover);
-}
-
-.nav-item:hover{
-    border: 1.5px solid var(--stroke-color-hover);
-    background: var(--bg-color-hover);
+    background-color: var(--bg-color-hover);
 }
 
 #links-sociais{
@@ -157,10 +147,7 @@ body{
     border-radius: 5rem;
     text-decoration: none;
     transition: background 0.2s;
-}
-
-.sociais-item:hover{
-    background-color: var(--bg-social-color);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .sociais-item:active{
@@ -179,6 +166,23 @@ body{
 
     .light{
         --bg-url: url(assets/bg-desktop-light.jpg);
+    }
+
+    #switch:hover{
+        cursor: pointer;
+    }
+
+    #switch button:hover{
+        cursor: pointer;
+    }
+
+    .sociais-item:hover{
+        background-color: var(--bg-social-color);
+    }
+
+    .nav-item:hover{
+        border: 1.5px solid var(--stroke-color-hover);
+        background: var(--bg-color-hover);
     }
 }
 
